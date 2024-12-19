@@ -3,7 +3,7 @@ import React from "react";
 const JobCategoryList = () => {
   return (
     <div>
-      <h2>Job Category List</h2>
+      <h2 className="text-6xl text-center">Job Category List</h2>
     </div>
   );
 };
