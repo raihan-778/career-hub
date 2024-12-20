@@ -1,4 +1,6 @@
 import React from "react";
+import { HiCurrencyBangladeshi } from "react-icons/hi2";
+import { IoLocationSharp } from "react-icons/io5";
 
 const Job = ({ job }) => {
   const {
@@ -21,24 +23,29 @@ const Job = ({ job }) => {
         <img src={logo} alt="Shoes" />
       </figure>
       <div className="card-body">
+        <h3>{job_title}</h3>
         <h2 className="card-title">
-          <div className="badge badge-secondary">{job_title}</div>
+          <div className="badge badge-secondary">{company_name}</div>
         </h2>
         <p>{job_description}</p>
         <div className="card-actions justify-end">
-          <div className="badge badge-outline">{remote_or_onsite}</div>
-          <div className="badge badge-outline">{job_type}</div>
+          <button className="px-5 py-2 font-extrabold border text-[#7E90FE] rounded border-[#7E90FE] mr-4">{remote_or_onsite}</button>
+          <button className=" px-5 py-2 font-extrabold border text-[#7E90FE] rounded border-[#7E90FE] mr-4">{job_type}</button>
         </div>
         <div className="card-actions justify-end">
           <div className="font-semibold flex justify-end ">
-            <img className="mr-1" src="/public/icons/location2.png" alt="" />
+        
+            <IoLocationSharp className="mr-1 text-2xl text-[#7E90FE]"  />
             {location}
           </div>
           <div className="font-semibold ml-1 flex justify-end ">
-            <img className="mr-1" src="/public/icons/money.png" alt="" />
+        
+            
+            <HiCurrencyBangladeshi className="mr-1 text-2xl text-[#7E90FE]"  />
 
             {salary}
           </div>
+          <button className=" px-5 py-2 bg-violet-600 font-extrabold text-[#fff] rounded  mr-4">View Details</button>
         </div>
       </div>
     </div>
