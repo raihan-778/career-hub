@@ -1,9 +1,11 @@
 import React from "react";
 import { HiCurrencyBangladeshi } from "react-icons/hi2";
 import { IoLocationSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
   const {
+    id,
     company_name,
     educational_requirements,
     experiences,
@@ -45,7 +47,7 @@ const Job = ({ job }) => {
 
             {salary}
           </div>
-          <button className=" px-5 py-2 bg-violet-600 font-extrabold text-[#fff] rounded  mr-4">View Details</button>
+         <Link to={`job/${id}`}> <button className=" px-5 py-2 bg-violet-600 font-extrabold text-[#fff] rounded  mr-4">View Job Details</button></Link>
         </div>
       </div>
     </div>
