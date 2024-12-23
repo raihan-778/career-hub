@@ -17,9 +17,9 @@ export default [
         sourceType: "module",
       },
     },
-    env: {
-      node: true, // Enables Node.js globals like `require`
-    },
+    // env: {
+    //   node: true, // Enables Node.js globals like `require`
+    // },
     settings: { react: { version: "18.3" } },
     plugins: {
       react,

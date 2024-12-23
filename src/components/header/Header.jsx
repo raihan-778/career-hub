@@ -1,7 +1,9 @@
-import React from "react";
+import { getAuth, signOut } from "firebase/auth";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const auth = getAuth();
+
   const link = (
     <>
       <li>
